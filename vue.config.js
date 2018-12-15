@@ -1,18 +1,19 @@
 const path = require('path')
 
-const alias = location => path.resolve(__dirname, location)
+const alias = p => path.resolve(__dirname, p)
 
 module.exports = {
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.resolve.alias
+      .set('@assets', alias('src/assets'))
       .set('@components', alias('src/components'))
       .set('@containers', alias('src/containers'))
+      .set('@modules', alias('src/modules'))
       .set('@router', alias('src/router'))
-      .set('@content', alias('src/content'))
-      .set('@styles', alias('src/styles'))
-      .set('@assets', alias('src/assets'))
       .set('@store', alias('src/store'))
+      .set('@styles', alias('src/styles'))
       .set('@types', alias('src/store/types'))
+      .set('@templates', alias('src/templates'))
 
     config.resolve.extensions
       .add('.scss')
