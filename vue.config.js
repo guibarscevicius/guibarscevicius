@@ -1,5 +1,5 @@
-const srcAliases = require('@/src/helpers/srcAliases')
-const alias = require('@/src/modules/resolvePath')
+const path = require('path')
+const alias = p => path.resolve(__dirname, p)
 
 module.exports = {
   chainWebpack: config => {
