@@ -24,4 +24,3 @@ export default [
     href: 'whatsapp://send/+5511995180205',
   }
 ]
-
