@@ -1,6 +1,11 @@
 <template>
   <section class="contact-cover" :styles="styles">
-    <logo-component class="logo" />
+    <transition
+      name="rotate"
+      appear
+    >
+      <logo-component class="logo" />
+    </transition>
     <social-wheel :items="social" :icon-size="iconSize" />
   </section>
 </template>
@@ -31,7 +36,8 @@ export default {
 .contact-cover {
   & > .logo {
     fill: white;
-    width: 400px;
+    width: 360px;
+    padding: 20px;
     max-width: calc(100vw - 80px);
   }
 }

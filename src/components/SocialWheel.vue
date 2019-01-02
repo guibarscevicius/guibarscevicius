@@ -1,19 +1,24 @@
 <template>
   <div class="social-wheel">
-    <a
+    <transition
       v-for="({ name, image, href }, i) in items"
       :key="name"
-      class="item"
-      :href="href"
-      target="_blank"
-      :style="getStyles(i)"
+      appear
+      name="move"
     >
-      <icon
-        :icon="name"
-        class="icon"
-        :size="iconSize"
-      />
-    </a>
+      <a
+        class="item"
+        :href="href"
+        target="_blank"
+        :style="getStyles(i)"
+      >
+        <icon
+          :icon="name"
+          class="icon"
+          :size="iconSize"
+        />
+      </a>
+    </transition>
   </div>
 </template>
 
@@ -93,7 +98,10 @@ export default {
     top: 50%;
     display: flex;
 
-    & > .icon { fill: white; }
+    & > .icon {
+      fill: white;
+      transition: transform .3s ease;
+    }
   }
 }
 </style>

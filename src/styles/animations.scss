@@ -1,0 +1,22 @@
+// rotate
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+.rotate-enter-active { animation: rotate .5s; }
+
+// move
+@keyframes move {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+.move-enter-active { animation: move .3s; }
+
+// fade
+@keyframes fade {
+  from { opacity: 0; }
+}
+
+.fade-enter-active { animation: fade .15s; }
