@@ -17,5 +17,17 @@ module.exports = {
 
     config.resolve.extensions
       .add('.scss')
-  }
+      .add('.svg')
+  },
+
+  devServer: {
+    host: '0.0.0.0',
+    hot: true,
+    disableHostCheck: true,
+    watchOptions: {
+      ignored: /node_modules/,
+      aggregteTimeout: 300,
+      poll: 1000
+    },
+  },
 }

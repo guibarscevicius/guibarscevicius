@@ -2,12 +2,12 @@
 export default [
   {
     path: '/',
-    component: () => import('@templates/Main'),
+    component: () => import(/* webpackChunkName: "mainTemplate" */ '@templates/Main'),
     children: [
       {
         path: '',
         name: 'Home',
-        component: () => import('@components/Homepage')
+        component: () => import(/* webpackChunkName: "homepage" */ '@components/Homepage')
       }
     ]
   }
