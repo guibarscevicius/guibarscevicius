@@ -21,6 +21,6 @@ export default [
   },
   {
     name: 'whatsapp',
-    href: 'whatsapp://send/+5511995180205',
+    href: 'https://wa.me/+5511995180205',
   }
 ]
