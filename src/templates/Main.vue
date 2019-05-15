@@ -1,6 +1,6 @@
 <template>
   <transition appear name="fade">
-    <section class="main-view">
+    <section class="main-template">
       <router-view />
     </section>
   </transition>

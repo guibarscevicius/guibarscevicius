@@ -1,14 +1,14 @@
 <template>
   <section class="homepage-component">
-    <contact-cover class="cover" />
+    <contact-information class="cover" />
   </section>
 </template>
 
 <script>
+import ContactInformation from '@containers/Homepage/Contact'
+
 export default {
-  components: {
-    ContactCover: () => import('@containers/ContactCover'),
-  }
+  components: { ContactInformation }
 }
 </script>
 

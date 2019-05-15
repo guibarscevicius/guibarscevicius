@@ -6,8 +6,13 @@ export default [
     children: [
       {
         path: '',
-        name: 'Home',
-        component: () => import(/* webpackChunkName: "homepage" */ '@components/Homepage')
+        name: 'Homepage',
+        component: () => import(/* webpackChunkName: "homepage" */ '@containers/Homepage')
+      },
+      {
+        path: '/sobre',
+        name: 'Sobre',
+        component: () => import(/* webpackChunkName: "about" */ '@containers/About')
       }
     ]
   }

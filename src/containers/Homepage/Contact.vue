@@ -12,11 +12,13 @@
 
 <script>
 import social from '@helpers/socialLinks'
+import LogoComponent from '@components/Logo'
+import SocialWheel from '@components/SocialWheel'
 
 export default {
   components: {
-    LogoComponent: () => import('@components/Logo'),
-    SocialWheel: () => import('@components/SocialWheel'),
+    LogoComponent,
+    SocialWheel
   },
   data: () => ({
     social,
