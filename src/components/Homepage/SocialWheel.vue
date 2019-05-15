@@ -1,7 +1,7 @@
 <template>
   <div class="social-wheel">
     <transition
-      v-for="({ name, image, href }, i) in items"
+      v-for="({ name, href }, i) in items"
       :key="name"
       appear
       name="move"
