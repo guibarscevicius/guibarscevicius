@@ -23,10 +23,10 @@
 </template>
 
 <script>
+import GIcon from '@GComponents/GIcon'
+
 export default {
-  components: {
-    GIcon: () => import('@GComponents/GIcon')
-  },
+  components: { GIcon },
   props: {
     items: {
       type: Array,
