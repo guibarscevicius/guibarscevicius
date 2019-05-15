@@ -12,8 +12,8 @@
 
 <script>
 import social from '@helpers/socialLinks'
-import LogoComponent from '@components/Logo'
-import SocialWheel from '@components/SocialWheel'
+import LogoComponent from '@components/Common/Logo'
+import SocialWheel from '@components/Homepage/SocialWheel'
 
 export default {
   components: {

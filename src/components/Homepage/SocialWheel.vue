@@ -12,7 +12,7 @@
         target="_blank"
         :style="getStyles(i)"
       >
-        <icon
+        <g-icon
           :icon="name"
           class="icon"
           :size="iconSize"
@@ -25,7 +25,7 @@
 <script>
 export default {
   components: {
-    Icon: () => import('@components/Icon')
+    GIcon: () => import('@components/GComponents/GIcon')
   },
   props: {
     items: {
