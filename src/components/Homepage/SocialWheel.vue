@@ -25,7 +25,7 @@
 <script>
 export default {
   components: {
-    GIcon: () => import('@components/GComponents/GIcon')
+    GIcon: () => import('@GComponents/GIcon')
   },
   props: {
     items: {

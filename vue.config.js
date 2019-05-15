@@ -7,6 +7,7 @@ module.exports = {
       .set('@assets', alias('assets'))
       .set('@components', alias('components'))
       .set('@containers', alias('containers'))
+      .set('@GGomponents', alias('components/GComponents'))
       .set('@helpers', alias('helpers'))
       .set('@modules', alias('modules'))
       .set('@router', alias('router'))
