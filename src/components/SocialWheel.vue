@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import ResizeObserver from '@juggle/resize-observer'
+
 export default {
   components: {
     Icon: () => import('@components/Icon')
