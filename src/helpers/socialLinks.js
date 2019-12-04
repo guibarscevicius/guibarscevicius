@@ -15,10 +15,10 @@ export default [
     name: 'linkedin',
     href: 'https://www.linkedin.com/in/guibarscevicius',
   },
-  {
-    name: 'twitter',
-    href: 'https://twitter.com/gbarscevicius',
-  },
+  // {
+  //   name: 'twitter',
+  //   href: 'https://twitter.com/gbarscevicius',
+  // },
   {
     name: 'whatsapp',
     href: 'https://wa.me/+5511995180205',
