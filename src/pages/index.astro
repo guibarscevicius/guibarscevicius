@@ -1,5 +1,6 @@
 ---
 import 'uno.css'
+import Legacy from '~Legacy/Main.vue'
 
 const title = 'Gui Barscevicius'
 ---
@@ -12,21 +13,15 @@ const title = 'Gui Barscevicius'
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-	<style global>
+	<!-- <style global>
 		@import "../styles/global.css";
 	</style>
 
 	<style>
 		@import "../styles/home.css";
-	</style>
+	</style> -->
 </head>
 <body>
-	<main>
-		<header>
-			<div>
-				<h1>Little Paws!</h1>
-			</div>
-		</header>
-	</main>
+  <Legacy client:load />
 </body>
 </html>
