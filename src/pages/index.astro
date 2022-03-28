@@ -1,24 +1,23 @@
 ---
 import 'uno.css'
-import '@unocss/reset/normalize.css'
-import Legacy from '~Legacy/Main.vue'
+import '@unocss/reset/eric-meyer.css'
+import Legacy from '~Legacy/index.vue'
 
 const title = 'Gui Barscevicius'
 ---
 
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
 
-	<style>
-		@import "../styles/global.css";
-	</style>
-</head>
-<body>
-  <Legacy client:load />
-</body>
+  <body>
+    <div class="bg-sky-700 h-screen">
+      <Legacy />
+    </div>
+  </body>
 </html>
