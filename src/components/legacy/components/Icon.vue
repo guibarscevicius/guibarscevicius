@@ -1,5 +1,5 @@
 <template>
-  <svg class="svg-icon" v-html="icon" :style="{ height: size + 'px', width: size + 'px' }" viewBox="0 0 14 14" preserveAspectRatio="none" />
+  <div :class="icon" :style="{ height: '20px', width: '20px' }" />
 </template>
 
 <script>
@@ -16,10 +16,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.svg-icon {
-  display: flex;
-  & > * { flex: 1 0 0; font-size: 20px; }
-}
-</style>

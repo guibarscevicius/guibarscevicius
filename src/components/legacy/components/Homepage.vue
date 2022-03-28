@@ -11,12 +11,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '../styles/reference.scss';
-
+<style>
 .homepage-component {
   display: flex;
-  background-color: $mainColor;
+  background-color: var(--main-color);
   min-height: 100vh;
 
   & > .cover {

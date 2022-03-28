@@ -31,13 +31,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.contact-cover {
-  & > .logo {
-    fill: white;
-    width: 360px;
-    padding: 20px;
-    max-width: calc(100vw - 80px);
-  }
+<style>
+.contact-cover > .logo {
+  fill: white;
+  width: 360px;
+  padding: 20px;
+  max-width: calc(100vw - 80px);
 }
 </style>

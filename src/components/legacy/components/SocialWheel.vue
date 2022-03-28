@@ -1,8 +1,8 @@
 <template>
   <div class="social-wheel">
     <transition
-      v-for="({ component, href }, i) in items"
-      :key="component"
+      v-for="({ icon, href }, i) in items"
+      :key="icon"
       appear
       name="move"
     >
@@ -13,7 +13,7 @@
         :style="getStyles(i)"
       >
         <icon
-          :icon="component"
+          :icon="icon"
           class="icon"
           :size="iconSize"
         />
