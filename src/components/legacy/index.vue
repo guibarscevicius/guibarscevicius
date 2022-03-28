@@ -1,19 +1,14 @@
 <template>
   <section class="contact-cover" :styles="styles">
-    <transition
-      name="rotate"
-      appear
-    >
-      <logo-component class="logo" />
-    </transition>
+    <logo-component class="logo" />
     <social-wheel :items="social" :icon-size="iconSize" />
   </section>
 </template>
 
 <script>
-import social from '~Components/legacy/helpers/socialLinks.js'
-import LogoComponent from '~Legacy/components/Logo.vue'
-import SocialWheel from '~Legacy/components/SocialWheel.vue'
+import social from '~Legacy/socialLinks.js'
+import LogoComponent from '~Legacy/Logo.vue'
+import SocialWheel from '~Legacy/SocialWheel.vue'
 
 export default {
   components: { LogoComponent, SocialWheel },

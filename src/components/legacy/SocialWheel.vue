@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Icon from '~Legacy/components/Icon.vue'
+import Icon from '~Legacy/Icon.vue'
 
 export default {
   components: { Icon },
