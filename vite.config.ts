@@ -10,13 +10,14 @@ export default {
         presetIcons({
           prefix: 'i-',
           extraProperties: {
-            display: 'inline-block'
+            display: 'inline-block',
+            'font-size': '2em',
           },
         }),
         presetUno(),
       ],
       safelist: [
-        'text-3x1', 'text-4x1', 'text-5x1',
+        'text-current',
         ...socialIcons.map((icon) => 'i-' + icon.class),
       ]
     })
