@@ -7,7 +7,7 @@ export default {
     class: String,
   },
   setup(props) {
-    return () => h('a', { href: props.href },
+    return () => h('a', { href: props.href, class: 'text-current' },
       h('div', { class: `i-${props.class}` })
     )
   }
