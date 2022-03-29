@@ -1,20 +1,30 @@
 import Unocss from 'unocss/vite'
 import presetUno from '@unocss/preset-uno'
 import presetIcons from '@unocss/preset-icons'
-import transformerDirective from '@unocss/transformer-directives'
+import socialIcons from './src/content/social.js'
 
 export default {
   plugins: [
     Unocss({
       presets: [
-        presetUno(),
         presetIcons({
+          prefix: 'i-',
           extraProperties: {
             display: 'inline-block'
+          },
+          collections: {
+            logos: () => import(
+              '@iconify-json/logos/icons.json',
+              { assert: { type: 'json' } }
+            ).then(i => i.default as any)
           }
-        })
+        }),
+        presetUno(),
       ],
-      transformers: [ transformerDirective() ],
+      safelist: [
+        'text-4x1',
+        ...socialIcons.map((icon) => 'i-' + icon.class),
+      ]
     })
   ],
 }

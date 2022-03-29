@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
+    "moduleResolution": "esnext",
     "baseUrl": ".",
     "paths": {
+      "~Assets/*": ["src/assets/*"],
       "~Components/*": ["src/components/*"],
+      "~Content/*": ["src/content/*"],
       "~Legacy/*": ["src/components/legacy/*"],
-    }
+    },
+    "resolveJsonModule": true,
   }
 }
