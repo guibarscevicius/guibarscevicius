@@ -6,6 +6,7 @@ import Logo from '~Components/logo.astro'
 import Icon from '~Components/icon.vue'
 
 import social from '~Content/social.js'
+import knowledge from '~Content/knowledge.js'
 
 const title = 'Gui Barscevicius'
 ---
@@ -23,6 +24,7 @@ const title = 'Gui Barscevicius'
     <div class="bg-sky-700 h-screen text-white">
       <Logo class="h-100 w-100" />
       {social.map(item => <Icon {...item} />)}
+      {knowledge.map(item => <Icon {...item} />)}
     </div>
   </body>
 </html>

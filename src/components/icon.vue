@@ -13,7 +13,12 @@ export default {
         class: 'text-current',
         target: '_blank'
       },
-      h('div', { class: `i-${props.class}` })
+      h(
+        'div', {
+          class: `i-${props.class}`,
+          style: props.style
+        }
+      )
     )
   }
 }
