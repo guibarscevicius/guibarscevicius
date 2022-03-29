@@ -1,7 +1,11 @@
 ---
 import 'uno.css'
 import '@unocss/reset/eric-meyer.css'
-import Legacy from '~Legacy/index.vue'
+
+import Logo from '~Components/logo.astro'
+import Icon from '~Components/icon.vue'
+
+import social from '~Content/social.js'
 
 const title = 'Gui Barscevicius'
 ---
@@ -16,8 +20,9 @@ const title = 'Gui Barscevicius'
   </head>
 
   <body>
-    <div class="bg-sky-700 h-screen">
-      <Legacy />
+    <div class="bg-sky-700 h-screen text-white text-4x1">
+      <Logo class="h-100 w-100" />
+      {social.map(item => <Icon {...item} />)}
     </div>
   </body>
 </html>
