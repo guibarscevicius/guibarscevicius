@@ -22,7 +22,7 @@ export default {
         presetUno(),
       ],
       safelist: [
-        'text-4x1',
+        'text-3x1', 'text-4x1', 'text-5x1',
         ...socialIcons.map((icon) => 'i-' + icon.class),
       ]
     })
