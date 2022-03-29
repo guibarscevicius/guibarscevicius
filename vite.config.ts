@@ -12,12 +12,6 @@ export default {
           extraProperties: {
             display: 'inline-block'
           },
-          collections: {
-            logos: () => import(
-              '@iconify-json/logos/icons.json',
-              { assert: { type: 'json' } }
-            ).then(i => i.default as any)
-          }
         }),
         presetUno(),
       ],
