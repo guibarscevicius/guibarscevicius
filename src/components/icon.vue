@@ -10,7 +10,7 @@ export default {
     return () => h(
       'a', {
         href: props.href,
-        class: 'text-current',
+        class: 'text-current inline-block',
         target: '_blank'
       },
       h(
