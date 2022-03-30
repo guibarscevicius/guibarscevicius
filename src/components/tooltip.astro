@@ -1,14 +1,9 @@
 ---
 const { text } = Astro.props
-
-const tooltipClasses = `
-  tooltip invisible absolute rounded shadow-lg p-1
-  bg-gray-100 left-1/2 -translate-x-1/2 -top-full z-50
-`
 ---
 { text
   ? <div class='inline-block relative has-tooltip'>
-    <span class={tooltipClasses}
+    <span class='tooltip'
     >{text}</span>
     <slot />
   </div>
@@ -17,7 +12,19 @@ const tooltipClasses = `
 }
 
 <style>
+  .tooltip {
+    @apply invisible absolute rounded shadow-lg p-1.5
+      text-gray-700 bg-white left-1/2 -translate-x-1/2
+      -top-full z-50;
+  }
+
   .has-tooltip:hover .tooltip {
     @apply visible;
+  }
+
+  .tooltip:after {
+    @apply block absolute left-1/2 -translate-x-1/2
+      top-full border-4 border-transparent border-t-white;
+    content: '';
   }
 </style>
