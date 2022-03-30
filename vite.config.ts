@@ -2,6 +2,7 @@ import Unocss from 'unocss/vite'
 
 import presetAttributify from '@unocss/preset-attributify'
 import presetUno from '@unocss/preset-uno'
+import presetWebFonts from '@unocss/preset-web-fonts'
 import presetIcons from '@unocss/preset-icons'
 import transformerDirective from '@unocss/transformer-directives'
 
@@ -15,6 +16,13 @@ export default {
       presets: [
         presetAttributify(),
         presetUno(),
+        presetWebFonts({
+          provider: 'google',
+          fonts: {
+            sans: 'Lato',
+            brand: 'Ubuntu',
+          },
+        }),
         presetIcons({
           prefix: 'i-',
           extraProperties: {
