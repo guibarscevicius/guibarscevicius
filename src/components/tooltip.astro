@@ -3,9 +3,7 @@ const { text } = Astro.props
 ---
 { text
   ? <div class='inline-block relative has-tooltip'>
-    <span
-      class='tooltip invisible absolute rounded shadow-lg p-1 bg-gray-100 -mt-8 -left-1/2 z-50'
-      text="red-500"
+    <span class='tooltip invisible absolute rounded shadow-lg p-1 bg-gray-100 -mt-8 -left-1/2 z-50'
     >{text}</span>
     <slot />
   </div>
