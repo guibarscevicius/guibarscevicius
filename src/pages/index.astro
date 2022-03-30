@@ -4,6 +4,7 @@ import '@unocss/reset/eric-meyer.css'
 
 import Logo from '~Components/logo.astro'
 import Icon from '~Components/icon.vue'
+import Tooltip from '~Components/tooltip.astro'
 
 import social from '~Content/social.js'
 import knowledge from '~Content/knowledge.js'
@@ -23,8 +24,8 @@ const title = 'Gui Barscevicius'
   <body>
     <div class="bg-sky-700 h-screen text-white">
       <Logo class="h-100 w-100" />
-      {social.map(item => <Icon {...item} />)}
-      {knowledge.map(item => <Icon {...item} />)}
+      {social.map(item => <Tooltip text={item.name}><Icon {...item} /></Tooltip>)}
+      {knowledge.map(item => <Tooltip text={item.name}><Icon {...item} /></Tooltip>)}
     </div>
   </body>
 </html>
