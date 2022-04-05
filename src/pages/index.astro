@@ -25,16 +25,16 @@ const title = 'Gui Barscevicius'
 
   <body font-sans select-none>
     <SidebarPage>
-      <nav
+      <aside
         slot="sidebar"
         class='flex flex-col h-screen justify-between items-center px-4 py-2'
       >
         <Brand />
 
-        <nav inline-flex>
+        <nav inline-flex flex-col>
           {social.map(item => <Icon {...item} />)}
         </nav>
-      </nav>
+      </aside>
     </SidebarPage>
     <!-- {knowledge.map(item => <Tooltip text={item.name}><Icon {...item} /></Tooltip>)} -->
   </body>
