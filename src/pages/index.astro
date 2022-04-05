@@ -1,7 +1,8 @@
 ---
 import 'uno.css'
-import '@unocss/reset/eric-meyer.css'
+import '@unocss/reset/tailwind.css'
 
+import SidebarPage from '~Components/sidebarPage.astro'
 import Header from '~Components/header.astro'
 import Brand from '~Components/brand.astro'
 import Icon from '~Components/icon.vue'
@@ -23,12 +24,18 @@ const title = 'Gui Barscevicius'
   </head>
 
   <body font-sans select-none>
-    <Header class='flex justify-between items-center'>
-      <Brand />
-      <nav inline-flex>
-        {social.map(item => <Icon {...item} />)}
+    <SidebarPage>
+      <nav
+        slot="sidebar"
+        class='flex flex-col h-screen justify-between items-center px-4 py-2'
+      >
+        <Brand />
+
+        <nav inline-flex>
+          {social.map(item => <Icon {...item} />)}
+        </nav>
       </nav>
-    </Header>
+    </SidebarPage>
     <!-- {knowledge.map(item => <Tooltip text={item.name}><Icon {...item} /></Tooltip>)} -->
   </body>
 </html>
