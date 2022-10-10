@@ -2,7 +2,7 @@
 export default [
   {
     path: '/',
-    component: () => import(/* webpackChunkName: "mainTemplate" */ '@templates/Main'),
+    component: () => import(/* webpackChunkName: "mainTemplate" */ '@views/Main'),
     children: [
       {
         path: '',

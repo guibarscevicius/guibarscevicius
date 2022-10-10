@@ -14,6 +14,7 @@ module.exports = {
       .set('@styles', alias('styles'))
       .set('@templates', alias('templates'))
       .set('@types', alias('store/types'))
+      .set('@views', alias('views'))
 
     config.resolve.extensions
       .add('.scss')

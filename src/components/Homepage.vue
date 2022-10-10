@@ -7,7 +7,7 @@
 <script>
 export default {
   components: {
-    ContactCover: () => import('@containers/ContactCover'),
+    ContactCover: () => import('@components/ContactCover'),
   }
 }
 </script>
